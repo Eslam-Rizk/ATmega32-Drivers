@@ -15,6 +15,7 @@ This repository contains MCAL (Microcontroller Abstraction Layer) and HAL (Hardw
 4. Compile and flash the code onto your ATmega32 MCU using your preferred toolchain.
 
 #### Directory Structure:
+- `LIB`: Contains standard libraries and utilities for ATmega32 development.
 - `MCAL`: Contains the Microcontroller Abstraction Layer (MCAL) drivers.
 - `HAL`: Contains the Hardware Abstraction Layer (HAL) drivers.
 - `Examples`: Contains code examples demonstrating various functionalities and use cases.
