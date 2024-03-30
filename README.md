@@ -21,3 +21,6 @@ This repository contains MCAL (Microcontroller Abstraction Layer) and HAL (Hardw
 
 #### Compatibility:
 These drivers and code examples are specifically designed for the ATmega32 microcontroller. They may require modification to work with other microcontroller models or architectures.
+
+#### Contributions:
+Contributions, bug fixes, and enhancements are welcome! Please feel free to submit pull requests or open issues if you encounter any problems or have suggestions for improvement.
