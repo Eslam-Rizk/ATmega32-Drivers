@@ -16,16 +16,17 @@
 
 int main()
 {
-	_delay_ms(1000);
-	MDIO_vSetPinDir(DIO_PORTB , PIN0 , PIN_OUTPUT);
-	MDIO_vSetPinVal(DIO_PORTB , PIN0 , PIN_HIGH);
+    // Initialize watchdog timer with the specified sleep time
+    _delay_ms(1000); // Delay to allow the system to stabilize before watchdog configuration
+    MDIO_vSetPinDir(DIO_PORTB, PIN0, PIN_OUTPUT); // Set PIN0 of PORTB as output
+    MDIO_vSetPinVal(DIO_PORTB, PIN0, PIN_HIGH);   // Set PIN0 high initially
 
-	MWATCHDOG_uint16SleepTime(WDPrescaler);
-	MWATCHDOG_vEnable();
-	while (1)
-	{
+    // Configure the watchdog timer sleep time and enable it
+    MWATCHDOG_uint16SleepTime(WDPrescaler);
+    MWATCHDOG_vEnable();
 
-	}
+    while (1)
+    {
+        // Infinite loop to keep the microcontroller running
+    }
 }
-
-
